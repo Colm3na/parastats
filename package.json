@@ -24,10 +24,15 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/google-fonts": "^1.2.0",
+    "@nuxtjs/google-gtag": "^1.0.4",
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.2",
-    "nuxt": "^2.14.12"
+    "klaro": "^0.7.11",
+    "nuxt": "^2.14.12",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
