@@ -1,18 +1,14 @@
 <template>
   <footer class="footer">
     <div class="container text-center text-muted">
-      &copy; {{ new Date().getFullYear() }} ParaStats - Developed by
+      &copy; {{ new Date().getFullYear() }} ParaStats - Made with love by
       <a href="https://polkastats.io" target="_blank">PolkaStats</a>
-      ·
+      - / -
       <nuxt-link to="/terms">Terms of use</nuxt-link>
-      ·
+      - / -
       <nuxt-link to="/privacy">Privacy policy</nuxt-link>
-      ·
+      - / -
       <a href="#" @click.prevent="Klaro.show()">Cookie Settings</a>
-      ·
-      <a href="https://github.com/Colm3na/parastats" target="_blank"
-        >Fork me on GitHub!</a
-      >
     </div>
   </footer>
 </template>
