@@ -144,7 +144,7 @@ export default {
         },
         {
           logo: 'img/logo/Robonomics_400x400.jpg',
-          name: 'Robonomics Network',
+          name: 'Robonomics',
           website: 'https://robonomics.network/',
           project: 'Robonomics Network',
           description:
@@ -170,29 +170,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.home-page .title {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  font-weight: 800;
-}
-.home-page .kusama-canary {
-  width: 6rem;
-  height: 6rem;
-}
-.home-page .kusama-logo {
-  display: inline-block;
-  max-width: 190px;
-  margin-top: -1.2rem;
-}
-.home-page .project-logo {
-  max-width: 60px;
-  max-height: 60px;
-  border-radius: 50%;
-  border: 2px solid rgba(16, 138, 238, 0.2);
-}
-.home-page tr td {
-  border-top: 1px solid rgba(16, 138, 238, 0.2);
-}
-</style>

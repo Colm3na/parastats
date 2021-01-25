@@ -55,33 +55,6 @@ $theme-colors: map-merge(
 $border-radius: 0 !default;
 $border-radius-lg: 0 !default;
 $border-radius-sm: 0 !default;
-
-// $pagination-color: $body-color !default;
-// $pagination-bg: $dark !default;
-// $pagination-border-color: $secondary !default;
-// $pagination-hover-color: $primary !default;
-// $pagination-hover-bg: $dark !default;
-// $pagination-hover-border-color: $secondary !default;
-// $pagination-active-color: $secondary !default;
-// $pagination-active-bg: $dark !default;
-// $pagination-active-border-color: $secondary !default;
-// $pagination-disabled-color: $secondary !default;
-// $pagination-disabled-bg: $dark !default;
-// $pagination-disabled-border-color: $secondary !default;
-// $table-dark-bg: $body-bg !default;
-// $table-dark-border-color: rgba(255, 255, 255, 0.2) !default;
-// $alert-bg-level: 10;
-// $alert-border-level: 1;
-// $alert-color-level: -10;
-// $nav-tabs-link-active-color: $body-color !default;
-// $hr-border-color: rgba(255, 255, 255, 0.2) !default;
-// $custom-control-indicator-checked-bg: $secondary !default;
-// $custom-control-indicator-bg: $white !default;
-// $navbar-dark-color: $light !default;
-// $navbar-dark-hover-color: $white !default;
-// $navbar-dark-disabled-color: $white !default;
-// $h1-font-size: 2.1rem !default;
-
 $table-border-width: 0 !default;
 
 // import bootstrap scss
@@ -115,12 +88,6 @@ body::-webkit-scrollbar-thumb {
 .logo {
   height: 1.65rem;
 }
-.navbar-dark {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-}
-.custom-switch .custom-control-label {
-  cursor: pointer;
-}
 .hr {
   color: gray;
 }
@@ -135,37 +102,46 @@ body::-webkit-scrollbar-thumb {
 .footer a {
   color: $body-color;
 }
-.close:hover {
-  color: #d1ecf1;
-}
-.toast-body {
-  word-break: break-all;
-}
-pre {
-  font-size: initial;
-  color: $light;
-}
-.nav-tabs .nav-item a {
-  color: $light;
-}
-.text-selected {
-  color: #00effc;
-}
-// additional component
-.additional-info p {
-  color: $light;
-}
 
-// identicon component
-.identicon {
-  cursor: pointer;
+// home
+
+.home-page .title {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 800;
+}
+.home-page .kusama-canary {
+  width: 6rem;
+  height: 6rem;
+}
+.home-page .kusama-logo {
   display: inline-block;
+  max-width: 190px;
+  margin-top: -1.2rem;
 }
-
-// loading component
-.loading {
-  margin-top: calc(30vh);
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
+.home-page .project-logo {
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgba(16, 138, 238, 0.2);
+  margin-right: 1rem;
+}
+.home-page tr td {
+  border-top: 1px solid rgba(16, 138, 238, 0.2);
+}
+.home-page tr td:first-child {
+  width: 20%;
+}
+.home-page tr td:nth-child(2) {
+  width: 15%;
+}
+.home-page tr td:nth-child(3) {
+  width: 45%;
+}
+.home-page tr td:nth-child(4) {
+  width: 10%;
+}
+.home-page tr td:nth-child(5) {
+  width: 10%;
 }
 
