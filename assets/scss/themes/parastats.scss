@@ -87,7 +87,7 @@ body::-webkit-scrollbar-thumb {
   outline: none;
 }
 .logo {
-  height: 1.65rem;
+  height: 3rem;
 }
 .hr {
   color: gray;
@@ -109,6 +109,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 2.5rem;
   line-height: 3rem;
   font-weight: 800;
+  vertical-align: middle;
 }
 .header .kusama-canary {
   width: 6rem;

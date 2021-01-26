@@ -1,5 +1,12 @@
 <template>
   <div class="page home-page container-fluid py-3">
+    <div class="header text-center">
+      <h1 class="title mt-2 mb-4">
+        UPCOMING <span class="text-secondary">PROJECTS</span> OPTING FOR A
+        <span class="text-secondary">PARACHAIN</span> ON
+        <img class="kusama-logo" src="/img/logo/kusama.svg" />
+      </h1>
+    </div>
     <b-table
       hover
       :fields="fields"
