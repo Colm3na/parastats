@@ -4,8 +4,8 @@
       hover
       :fields="fields"
       :items="projects"
-      @row-clicked="onRowClicked"
       class="mt-3"
+      @row-clicked="onRowClicked"
     >
       <template #cell(name)="data">
         <!-- desktop -->
@@ -92,7 +92,7 @@ export default {
   },
   head() {
     return {
-      title: `ParaStats | Upcoming projects opting for a parachain in Kusama`,
+      title: 'ParaStats | Upcoming projects opting for a parachain in Kusama',
       meta: [
         {
           hid: 'description',

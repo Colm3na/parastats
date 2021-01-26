@@ -25,8 +25,8 @@ $cyan: #17a2b8 !default;
 
 // theme colors
 $body-bg: #132028;
-$body-color: #fff;
-$primary: #fff;
+$body-color: $gray-300;
+$primary: $gray-300;
 $secondary: #e6007a;
 $success: #0dff7e;
 $info: $cyan !default;
@@ -186,4 +186,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   border: 2px solid rgba(16, 138, 238, 0.2);
   margin-bottom: 1rem;
+}
+
+.project-page .project-detail {
+  border-bottom: 2px solid rgba(16, 138, 238, 0.2);
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
