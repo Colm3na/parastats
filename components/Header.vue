@@ -1,13 +1,18 @@
 <template>
-  <b-navbar type="dark" variant="dark" sticky>
-    <b-container class="px-sm-3">
-      <b-navbar-brand>
-        <nuxt-link to="/" class="navbar-brand" :title="config.title">
-          <img class="logo mb-1" :src="config.logo" />
-        </nuxt-link>
-      </b-navbar-brand>
-    </b-container>
-  </b-navbar>
+  <div class="container-fluid header">
+    <div class="row">
+      <div class="col-md-2">
+        <img class="kusama-canary" src="/img/logo/kusama-canary.svg" />
+      </div>
+      <div class="col-md-10">
+        <h1 class="title mt-3">
+          UPCOMING <span class="text-secondary">PROJECTS</span> OPTING FOR A
+          <span class="text-secondary">PARACHAIN</span> ON
+          <img class="kusama-logo" src="/img/logo/kusama.svg" />
+        </h1>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
