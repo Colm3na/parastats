@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" sticky>
+  <b-navbar toggleable="lg" type="dark">
     <b-container class="px-sm-3">
       <b-navbar-brand>
         <nuxt-link to="/" class="navbar-brand" :title="config.title">

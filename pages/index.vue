@@ -44,7 +44,7 @@
         <h4>{{ data.item.token }}</h4>
       </template>
       <template #cell(leasePeriod)="data">
-        <h4>{{ data.item.leasePeriod }}</h4>
+        <h5>{{ data.item.leasePeriod }}</h5>
       </template>
     </b-table>
   </div>

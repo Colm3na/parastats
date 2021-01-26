@@ -64,15 +64,15 @@ $pre-color: $light !default;
 
 // global styles
 @font-face {
-  font-family: 'Roboto';
-  src: url('../../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-family: 'Exo2';
+  src: url('../../fonts/Exo_2/static/Exo2-Regular.ttf') format('truetype');
 }
 html {
   position: relative;
   min-height: 100%;
 }
 body {
-  font-family: 'Roboto', monospace;
+  font-family: 'Exo2', monospace;
   margin-bottom: 60px;
   font-size: 0.9rem;
 }
@@ -87,7 +87,7 @@ body::-webkit-scrollbar-thumb {
   outline: none;
 }
 .logo {
-  height: 3rem;
+  height: 2.6rem;
 }
 .hr {
   color: gray;
@@ -108,7 +108,6 @@ body::-webkit-scrollbar-thumb {
 .header .title {
   font-size: 2.5rem;
   line-height: 3rem;
-  font-weight: 800;
   vertical-align: middle;
 }
 .header .kusama-canary {
@@ -117,8 +116,9 @@ body::-webkit-scrollbar-thumb {
 }
 .header .kusama-logo {
   display: inline-block;
-  max-width: 190px;
+  max-width: 186px;
   margin-top: -1.2rem;
+  margin-left: 0.1rem;
 }
 
 // home
