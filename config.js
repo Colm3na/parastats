@@ -11,7 +11,7 @@ export const config = {
       logo: '/img/logo/Karura_400x400.jpg',
       name: 'Karura',
       slug: 'karura',
-      spinOff: {
+      sisterOf: {
         name: 'Acala Network',
         logo: '/img/logo/Acala_400x400.jpg',
         website: 'https://acala.network/',
@@ -37,7 +37,7 @@ export const config = {
       logo: '/img/logo/Moonbeam_400x400.jpg',
       name: 'Moonriver Network',
       slug: 'moonriver-network',
-      spinOff: {
+      sisterOf: {
         name: 'Moonbeam Network',
         logo: '/img/logo/Moonbeam_400x400.jpg',
         website: 'https://moonbeam.network/',
@@ -62,7 +62,7 @@ export const config = {
       logo: '/img/logo/ChainX_400x400.jpg',
       name: 'SherpaX',
       slug: 'sherpax',
-      spinOff: {
+      sisterOf: {
         name: 'ChainX',
         logo: '/img/logo/ChainX_400x400.jpg',
         website: 'https://chainx.org/',
@@ -88,7 +88,7 @@ export const config = {
       logo: '/img/logo/Darwinia_400x400.jpg',
       name: 'Darwinia Crab',
       slug: 'darwinia',
-      spinOff: {
+      sisterOf: {
         name: 'Darwinia Network',
         logo: '/img/logo/Darwinia_400x400.jpg',
         website: 'https://darwinia.network/',
@@ -114,7 +114,7 @@ export const config = {
       logo: '/img/logo/BiFrost_400x400.jpg',
       name: 'BiFrost',
       slug: 'bifrost',
-      spinOff: {
+      sisterOf: {
         name: 'BiFrost',
         logo: '/img/logo/BiFrost_400x400.jpg',
         website: 'https://thebifrost.io/',
@@ -140,7 +140,7 @@ export const config = {
       logo: '/img/logo/KILT_400x400.png',
       name: 'KILT Protocol',
       slug: 'kilt-protocol',
-      spinOff: {
+      sisterOf: {
         name: 'KILT Protocol',
         logo: '/img/logo/KILT_400x400.png',
         website: 'https://www.kilt.io/',
@@ -166,7 +166,7 @@ export const config = {
       logo: '/img/logo/Phala_400x400.jpg',
       name: 'Phala Network',
       slug: 'phala-network',
-      spinOff: {
+      sisterOf: {
         name: 'Phala Network',
         logo: '/img/logo/Phala_400x400.jpg',
         website: 'https://phala.network/',
@@ -192,7 +192,7 @@ export const config = {
       logo: '/img/logo/Crust_400x400.jpg',
       name: 'Crust Maxwell',
       slug: 'crust-maxwell',
-      spinOff: {
+      sisterOf: {
         name: 'Crust Network',
         logo: '/img/logo/Crust_400x400.jpg',
         website: 'https://www.crust.network/',
@@ -218,7 +218,7 @@ export const config = {
       logo: '/img/logo/Plasm_400x400.jpg',
       name: 'Plasm Network',
       slug: 'plasm-network',
-      spinOff: {
+      sisterOf: {
         name: 'Plasm Network',
         logo: '/img/logo/Plasm_400x400.jpg',
         website: 'https://www.plasmnet.io/',
@@ -243,7 +243,7 @@ export const config = {
       logo: '/img/logo/Robonomics_400x400.jpg',
       name: 'Robonomics',
       slug: 'robonomics-network',
-      spinOff: {
+      sisterOf: {
         name: 'Robonomics',
         logo: '/img/logo/Robonomics_400x400.jpg',
         website: 'https://robonomics.network/',
@@ -270,7 +270,7 @@ export const config = {
       logo: '/img/logo/Encointer_400x400.png',
       name: 'Encointer',
       slug: 'encointer',
-      spinOff: {
+      sisterOf: {
         name: 'Encointer',
         logo: '/img/logo/Encointer_400x400.png',
         website: 'https://encointer.org/',

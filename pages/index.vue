@@ -28,6 +28,10 @@
           <h3>{{ data.item.name }}</h3>
           <p class="text-light">{{ data.item.description }}</p>
           <h5>
+            SISTER OF:
+            <span class="text-light">{{ data.item.sisterOf.name }}</span>
+          </h5>
+          <h5>
             TOKEN: <span class="text-light">{{ data.item.token }}</span>
           </h5>
           <h5>
@@ -36,9 +40,9 @@
           </h5>
         </div>
       </template>
-      <template #cell(spinOff)="data">
-        <img :src="data.item.spinOff.logo" class="spinoff-logo d-inline" />
-        <h4 class="d-inline">{{ data.item.spinOff.name }}</h4>
+      <template #cell(sisterOf)="data">
+        <img :src="data.item.sisterOf.logo" class="sisterof-logo d-inline" />
+        <h4 class="d-inline">{{ data.item.sisterOf.name }}</h4>
       </template>
       <template #cell(token)="data">
         <h4>{{ data.item.token }}</h4>
@@ -59,8 +63,8 @@ export default {
       fields: [
         { key: 'name', label: 'NAME' },
         {
-          key: 'spinOff',
-          label: 'SPINOFF',
+          key: 'sisterOf',
+          label: 'SISTER OF',
           class:
             'text-center d-none d-sm-none d-md-none d-lg-table-cell d-xl-table-cell',
         },

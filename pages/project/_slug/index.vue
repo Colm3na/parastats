@@ -66,7 +66,15 @@
           </span>
         </div>
         <p class="text-light">{{ project.description }}</p>
-
+        <div class="row project-detail">
+          <div class="col-6">SISTER OF:</div>
+          <div class="col-6">
+            <a :href="project.sisterOf.website" target="_blank">
+              <img :src="project.sisterOf.logo" class="sisterof-logo" />
+              {{ project.sisterOf.name }}
+            </a>
+          </div>
+        </div>
         <div class="row project-detail">
           <div class="col-6">TOKEN:</div>
           <div class="col-6">
