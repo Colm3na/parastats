@@ -14,17 +14,35 @@
     </div>
     <b-table striped hover :fields="fields" :items="projects" class="mt-3">
       <template #cell(name)="data">
-        <img :src="data.item.logo" class="project-logo d-inline" />
-        <h3 class="mt-2 d-inline">{{ data.item.name }}</h3>
+        <!-- desktop -->
+        <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+          <img :src="data.item.logo" class="project-logo d-inline" />
+          <h3 class="d-inline">{{ data.item.name }}</h3>
+        </div>
+        <!-- mobile -->
+        <div
+          class="d-block d-sm-block d-md-block d-lg-none d-xl-none text-center"
+        >
+          <img :src="data.item.logo" class="project-logo-mobile" />
+          <h3>{{ data.item.name }}</h3>
+          <p class="text-light">{{ data.item.description }}</p>
+          <h5>
+            TOKEN: <span class="text-light">{{ data.item.token }}</span>
+          </h5>
+          <h5>
+            LEASE PERIOD:
+            <span class="text-light">{{ data.item.leasePeriod }}</span>
+          </h5>
+        </div>
       </template>
       <template #cell(project)="data">
-        <h4 class="mt-2">{{ data.item.project }}</h4>
+        <h4>{{ data.item.project }}</h4>
       </template>
       <template #cell(token)="data">
-        <h4 class="mt-2">{{ data.item.token }}</h4>
+        <h4>{{ data.item.token }}</h4>
       </template>
       <template #cell(leasePeriod)="data">
-        <h4 class="mt-2">{{ data.item.leasePeriod }}</h4>
+        <h4>{{ data.item.leasePeriod }}</h4>
       </template>
     </b-table>
   </div>
@@ -36,12 +54,42 @@ export default {
     return {
       fields: [
         { key: 'name', label: 'NAME' },
-        { key: 'project', label: 'PROJECT' },
-        { key: 'description', label: 'DESCRIPTION' },
-        { key: 'token', label: 'TOKEN' },
-        { key: 'leasePeriod', label: 'LEASE PERIOD' },
-        { key: 'name', label: 'NAME' },
-        { key: 'name', label: 'NAME' },
+        {
+          key: 'project',
+          label: 'PROJECT',
+          class:
+            'text-center d-none d-sm-none d-md-none d-lg-table-cell d-xl-table-cell',
+        },
+        {
+          key: 'description',
+          label: 'DESCRIPTION',
+          class:
+            'text-center d-none d-sm-none d-md-none d-lg-table-cell d-xl-table-cell',
+        },
+        {
+          key: 'token',
+          label: 'TOKEN',
+          class:
+            'text-center d-none d-sm-none d-md-none d-lg-table-cell d-xl-table-cell',
+        },
+        {
+          key: 'leasePeriod',
+          label: 'LEASE PERIOD',
+          class:
+            'text-center d-none d-sm-none d-md-none d-lg-table-cell d-xl-table-cell',
+        },
+        {
+          key: 'name',
+          label: 'NAME',
+          class:
+            'text-center d-none d-sm-none d-md-none d-lg-table-cell d-xl-table-cell',
+        },
+        {
+          key: 'name',
+          label: 'NAME',
+          class:
+            'text-center d-none d-sm-none d-md-none d-lg-table-cell d-xl-table-cell',
+        },
       ],
       projects: [
         {

@@ -126,22 +126,38 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid rgba(16, 138, 238, 0.2);
   margin-right: 1rem;
 }
+.home-page .project-logo-mobile {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgba(16, 138, 238, 0.2);
+  margin-bottom: 1rem;
+}
 .home-page tr td {
   border-top: 1px solid rgba(16, 138, 238, 0.2);
 }
-.home-page tr td:first-child {
-  width: 20%;
-}
-.home-page tr td:nth-child(2) {
-  width: 15%;
-}
-.home-page tr td:nth-child(3) {
-  width: 45%;
-}
-.home-page tr td:nth-child(4) {
-  width: 10%;
-}
-.home-page tr td:nth-child(5) {
-  width: 10%;
-}
 
+@media (min-width: 768px) {
+  .home-page tr {
+    border-bottom: 1px solid rgba(16, 138, 238, 0.2);
+  }
+  .home-page tr td {
+    border-top: 0;
+    vertical-align: middle;
+  }
+  .home-page tr td:first-child {
+    width: 20%;
+  }
+  .home-page tr td:nth-child(2) {
+    width: 15%;
+  }
+  .home-page tr td:nth-child(3) {
+    width: 45%;
+  }
+  .home-page tr td:nth-child(4) {
+    width: 10%;
+  }
+  .home-page tr td:nth-child(5) {
+    width: 10%;
+  }
+}
