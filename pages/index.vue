@@ -1,17 +1,42 @@
 <template>
   <div class="page home-page container-fluid py-3">
     <div class="header text-center">
-      <h1 class="title mt-2 mb-4">
+      <h1 class="title mt-1 mb-5">
         UPCOMING <span class="text-secondary">PROJECTS</span> OPTING FOR A
         <span class="text-secondary">PARACHAIN</span> ON
         <img class="kusama-logo" src="/img/logo/kusama.svg" />
       </h1>
     </div>
+    <!-- Filter -->
+    <b-row>
+      <b-col md="3">
+        <b-form-input
+          id="filterInput"
+          v-model="filter"
+          type="search"
+          placeholder="Search project"
+          debounce="500"
+          class="mb-3"
+        />
+      </b-col>
+      <b-col md="9" class="text-right">
+        <p class="pt-2 text-light">
+          Showing: {{ filteredRows }} / {{ projects.length }}
+        </p>
+      </b-col>
+    </b-row>
     <b-table
       hover
       :fields="fields"
       :items="projects"
       class="mt-3"
+      :filter="filter"
+      :filter-included-fields="filterOn"
+      :per-page="perPage"
+      :current-page="currentPage"
+      :sort-by.sync="sortBy"
+      :sort-desc.sync="sortDesc"
+      @filtered="onFiltered"
       @row-clicked="onRowClicked"
     >
       <template #cell(name)="data">
@@ -60,6 +85,13 @@ export default {
   data() {
     return {
       projects: config.projects,
+      perPage: 10,
+      currentPage: 1,
+      sortBy: 'name',
+      sortDesc: false,
+      filter: null,
+      filterOn: [],
+      rows: 0,
       fields: [
         { key: 'name', label: 'NAME' },
         {
@@ -113,11 +145,20 @@ export default {
       ],
     }
   },
+  computed: {
+    filteredRows() {
+      return this.filter ? this.rows : this.projects.length
+    },
+  },
   methods: {
     onRowClicked(project) {
       this.$router.push({
         path: `/project/${project.slug}`,
       })
+    },
+    onFiltered(filteredItems) {
+      this.rows = filteredItems.length
+      this.currentPage = 1
     },
   },
 }

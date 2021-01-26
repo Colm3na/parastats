@@ -52,9 +52,9 @@ $theme-colors: map-merge(
 );
 
 // bootstrap variable overrides
-$border-radius: 0 !default;
-$border-radius-lg: 0 !default;
-$border-radius-sm: 0 !default;
+$border-radius: 0.2rem !default;
+$border-radius-lg: 0.2rem !default;
+$border-radius-sm: 0.2rem !default;
 $table-border-width: 0 !default;
 $pre-color: $light !default;
 
