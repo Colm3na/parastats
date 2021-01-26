@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-8 mb-4">
         <p class="text-center">
           <img :src="project.logo" class="project-logo" />
         </p>
@@ -107,7 +107,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <Timeline
           :id="project.twitter.split('/')[3]"
           source-type="profile"
@@ -116,7 +116,7 @@
       </div>
     </div>
     <p>
-      <b-button variant="outline-primary mt-5" to="/"
+      <b-button variant="outline-primary" to="/"
         ><b-icon-arrow-left></b-icon-arrow-left> Return to project
         list</b-button
       >
