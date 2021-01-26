@@ -35,6 +35,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    // https://github.com/nuxt-community/fontawesome-module
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -50,6 +52,14 @@ export default {
   bootstrapVue: {
     bootstrapCSS: false,
     bootstrapVueCSS: false,
+  },
+
+  fontawesome: {
+    icons: {
+      solid: true,
+      regular: true,
+      brands: true,
+    },
   },
 
   'google-gtag': {

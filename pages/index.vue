@@ -29,8 +29,9 @@
           </h5>
         </div>
       </template>
-      <template #cell(project)="data">
-        <h4>{{ data.item.project }}</h4>
+      <template #cell(spinOff)="data">
+        <img :src="data.item.spinOff.logo" class="spinoff-logo d-inline" />
+        <h4 class="d-inline">{{ data.item.spinOff.name }}</h4>
       </template>
       <template #cell(token)="data">
         <h4>{{ data.item.token }}</h4>
@@ -51,8 +52,8 @@ export default {
       fields: [
         { key: 'name', label: 'NAME' },
         {
-          key: 'project',
-          label: 'PROJECT',
+          key: 'spinOff',
+          label: 'SPINOFF',
           class:
             'text-center d-none d-sm-none d-md-none d-lg-table-cell d-xl-table-cell',
         },
