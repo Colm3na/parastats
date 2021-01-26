@@ -33,7 +33,7 @@ $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-500 !default;
-$dark: #000;
+$dark: #132028;
 
 // set theme colors (variant names)
 $theme-colors: () !default;
@@ -56,7 +56,19 @@ $border-radius: 0.2rem !default;
 $border-radius-lg: 0.2rem !default;
 $border-radius-sm: 0.2rem !default;
 $table-border-width: 0 !default;
-$pre-color: $light !default;
+
+$pagination-color: $body-color !default;
+$pagination-bg: $dark !default;
+$pagination-border-color: $light !default;
+$pagination-hover-color: $primary !default;
+$pagination-hover-bg: $dark !default;
+$pagination-hover-border-color: $light !default;
+$pagination-active-color: $light !default;
+$pagination-active-bg: $dark !default;
+$pagination-active-border-color: $light !default;
+$pagination-disabled-color: $light !default;
+$pagination-disabled-bg: $dark !default;
+$pagination-disabled-border-color: $light !default;
 
 // import bootstrap scss
 @import 'bootstrap/scss/bootstrap.scss';

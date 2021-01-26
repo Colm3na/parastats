@@ -76,6 +76,58 @@
         <h5>{{ data.item.leasePeriod }}</h5>
       </template>
     </b-table>
+    <div class="row">
+      <div class="col-6">
+        <!-- desktop -->
+        <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+          <b-button-group>
+            <b-button
+              variant="outline-light"
+              :class="{ 'selected-per-page': perPage === 10 }"
+              @click="setPageSize(10)"
+              >10</b-button
+            >
+            <b-button
+              variant="outline-light"
+              :class="{ 'selected-per-page': perPage === 50 }"
+              @click="setPageSize(50)"
+              >50</b-button
+            >
+            <b-button
+              variant="outline-light"
+              :class="{ 'selected-per-page': perPage === 100 }"
+              @click="setPageSize(100)"
+              >100</b-button
+            >
+            <b-button
+              variant="outline-light"
+              :class="{ 'selected-per-page': perPage === 1000 }"
+              @click="setPageSize(1000)"
+              >All</b-button
+            >
+          </b-button-group>
+        </div>
+        <!-- mobile -->
+        <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+          <b-dropdown class="m-md-2" text="Page size" variant="outline-light">
+            <b-dropdown-item @click="setPageSize(10)">10</b-dropdown-item>
+            <b-dropdown-item @click="setPageSize(50)">50</b-dropdown-item>
+            <b-dropdown-item @click="setPageSize(100)">100</b-dropdown-item>
+            <b-dropdown-item @click="setPageSize(1000)">All</b-dropdown-item>
+          </b-dropdown>
+        </div>
+      </div>
+      <div class="col-6">
+        <b-pagination
+          v-model="currentPage"
+          :total-rows="filteredRows"
+          :per-page="perPage"
+          aria-controls="my-table"
+          variant="light"
+          align="right"
+        ></b-pagination>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -159,6 +211,9 @@ export default {
     onFiltered(filteredItems) {
       this.rows = filteredItems.length
       this.currentPage = 1
+    },
+    setPageSize(size) {
+      this.perPage = size
     },
   },
 }

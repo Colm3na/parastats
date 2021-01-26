@@ -76,7 +76,7 @@ export const config = {
       github: 'https://github.com/chainx-org/ChainX',
       youtube: '',
       description:
-        'ChainX, one of the earliest projects to launch in the Polkadot ecosystem, is committed to the research and application of Bitcoin Layer 2 expansion, its growth as a digital asset gateway and becoming a Polkadot second-layer relay chain for cross-chain asset exchange. A true pioneer in the development of Bitcoin Cross-DeFi.',
+        'ChainX, one of the earliest projects to launch in the Polkadot ecosystem, is committed to the research and application of Bitcoin Layer 2 expansion, its growth as a digital asset gateway and becoming a Polkadot second-layer relay chain for cross-chain asset exchange',
       token: 'KSX',
       leasePeriod: 'TBA',
       rococoV1: {
@@ -205,7 +205,7 @@ export const config = {
       github: 'https://github.com/crustio',
       youtube: '',
       description:
-        "CRUST provides a decentralized storage network of Web3 ecosystem. It supports multiple storage layer protocols such as IPFS, and exposes storage interfaces to application layer. Crust's technical stack is also capable of supporting a decentralized computing layer. It is designed to build a decentralized cloud ecosystem that values data privacy and ownership.",
+        "CRUST provides a decentralized storage network of Web3 ecosystem. It supports multiple storage layer protocols such as IPFS, and exposes storage interfaces to application layer. Crust's technical stack is also capable of supporting a decentralized computing layer",
       token: 'CRU',
       leasePeriod: 'TBA',
       rococoV1: {
@@ -265,7 +265,6 @@ export const config = {
           'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo.parachain.robonomics.network#/accounts',
       },
     },
-
     {
       logo: '/img/logo/Encointer_400x400.png',
       name: 'Encointer',
@@ -283,8 +282,34 @@ export const config = {
       github: '',
       youtube: '',
       description:
-        'Encointer is a fundamental redesign of money. Based on the principle of equal opportunity every human gets a universal basic income and a digital ID without relying on a central authority.',
+        'Encointer is a fundamental redesign of money. Based on the principle of equal opportunity every human gets a universal basic income and a digital ID without relying on a central authority',
       token: 'ERT',
+      leasePeriod: 'TBA',
+      rococoV1: {
+        included: true,
+        link:
+          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo.encointer.org#/accounts',
+      },
+    },
+    {
+      logo: '/img/logo/Zero_400x400.jpg',
+      name: 'Zero',
+      slug: 'zero',
+      sisterOf: {
+        name: 'Zero',
+        logo: '/img/logo/Zero_400x400.jpg',
+        website: 'https://zero.io',
+      },
+      website: 'https://zero.io',
+      twitter: 'https://twitter.com/zerodotio',
+      telegram: '',
+      discord: 'https://discord.com/invite/rhwtr7p',
+      medium: 'https://github.com/playzero',
+      github: '',
+      youtube: '',
+      description:
+        'ZERO is a multichain network providing asset, finance, governance protocols, a metaverse hypergraph and unique functionality tailored for the videogame, content and esports economy utilizing the native platform token PLAY',
+      token: 'PLAY',
       leasePeriod: 'TBA',
       rococoV1: {
         included: true,
