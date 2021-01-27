@@ -5,12 +5,14 @@ export const config = {
   logo: '/img/logo/kusama.svg',
   favicon: '/img/favicon/kusama.ico',
   baseURL: '/',
-  googleAnalytics: '',
+  googleAnalytics: 'G-TNJE563YY2',
   projects: [
     {
       logo: '/img/logo/Karura_400x400.jpg',
       name: 'Karura',
       slug: 'karura',
+      category: 'DeFi',
+      tags: ['liquid staking', 'stablecoin', 'DEX', 'lending', 'borrowing'],
       sisterOf: {
         name: 'Acala Network',
         logo: '/img/logo/Acala_400x400.jpg',
@@ -37,6 +39,8 @@ export const config = {
       logo: '/img/logo/Moonbeam_400x400.jpg',
       name: 'Moonriver Network',
       slug: 'moonriver-network',
+      category: 'Smart Contracts',
+      tags: ['ethereum', 'solidity'],
       sisterOf: {
         name: 'Moonbeam Network',
         logo: '/img/logo/Moonbeam_400x400.jpg',
@@ -62,6 +66,8 @@ export const config = {
       logo: '/img/logo/ChainX_400x400.jpg',
       name: 'SherpaX',
       slug: 'sherpax',
+      category: 'Bridge',
+      tags: ['bitcoin'],
       sisterOf: {
         name: 'ChainX',
         logo: '/img/logo/ChainX_400x400.jpg',
@@ -88,6 +94,8 @@ export const config = {
       logo: '/img/logo/Darwinia_400x400.jpg',
       name: 'Darwinia Crab',
       slug: 'darwinia',
+      category: 'Bridge',
+      tags: ['ethereum', 'TRON'],
       sisterOf: {
         name: 'Darwinia Network',
         logo: '/img/logo/Darwinia_400x400.jpg',
@@ -114,6 +122,8 @@ export const config = {
       logo: '/img/logo/BiFrost_400x400.jpg',
       name: 'BiFrost',
       slug: 'bifrost',
+      category: 'DeFi',
+      tags: ['ethereum', 'TRON'],
       sisterOf: {
         name: 'BiFrost',
         logo: '/img/logo/BiFrost_400x400.jpg',
@@ -140,6 +150,8 @@ export const config = {
       logo: '/img/logo/KILT_400x400.png',
       name: 'KILT Protocol',
       slug: 'kilt-protocol',
+      category: 'Self-Sovereign Data and Identity',
+      tags: [],
       sisterOf: {
         name: 'KILT Protocol',
         logo: '/img/logo/KILT_400x400.png',
@@ -166,6 +178,8 @@ export const config = {
       logo: '/img/logo/Phala_400x400.jpg',
       name: 'Phala Network',
       slug: 'phala-network',
+      category: 'Privacy',
+      tags: [],
       sisterOf: {
         name: 'Phala Network',
         logo: '/img/logo/Phala_400x400.jpg',
@@ -192,6 +206,8 @@ export const config = {
       logo: '/img/logo/Crust_400x400.jpg',
       name: 'Crust Maxwell',
       slug: 'crust-maxwell',
+      category: 'Decentralized Storage',
+      tags: [],
       sisterOf: {
         name: 'Crust Network',
         logo: '/img/logo/Crust_400x400.jpg',
@@ -218,6 +234,8 @@ export const config = {
       logo: '/img/logo/Plasm_400x400.jpg',
       name: 'Plasm Network',
       slug: 'plasm-network',
+      category: 'Smart Contracts',
+      tags: ['layer 2'],
       sisterOf: {
         name: 'Plasm Network',
         logo: '/img/logo/Plasm_400x400.jpg',
@@ -243,6 +261,8 @@ export const config = {
       logo: '/img/logo/Robonomics_400x400.jpg',
       name: 'Robonomics',
       slug: 'robonomics-network',
+      category: 'Robotics',
+      tags: [],
       sisterOf: {
         name: 'Robonomics',
         logo: '/img/logo/Robonomics_400x400.jpg',
@@ -269,6 +289,8 @@ export const config = {
       logo: '/img/logo/Encointer_400x400.png',
       name: 'Encointer',
       slug: 'encointer',
+      category: 'Universal Basic Income',
+      tags: [],
       sisterOf: {
         name: 'Encointer',
         logo: '/img/logo/Encointer_400x400.png',
@@ -295,6 +317,8 @@ export const config = {
       logo: '/img/logo/Zero_400x400.jpg',
       name: 'Zero',
       slug: 'zero',
+      category: 'Gaming Protocol',
+      tags: [],
       sisterOf: {
         name: 'Zero',
         logo: '/img/logo/Zero_400x400.jpg',

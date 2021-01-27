@@ -65,7 +65,27 @@
             </a>
           </span>
         </div>
+        <b-badge
+          pill
+          variant="secondary"
+          class="mb-4"
+          style="font-size: 1.5rem"
+        >
+          {{ project.category }}
+        </b-badge>
         <p class="text-light">{{ project.description }}</p>
+        <p class="py-2">
+          <span class="mr-2">TAGS:</span> 
+          <b-badge
+            v-for="tag in project.tags"
+            pill
+            variant="primary"
+            class="mr-2 mb-2"
+            style="font-size: 1rem"
+            :key="tag"
+            >{{ tag }}</b-badge
+          >
+        </p>
         <div class="row project-detail">
           <div class="col-6">SISTER OF:</div>
           <div class="col-6">
