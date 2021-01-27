@@ -39,6 +39,7 @@ export default {
       daysLeftToReachThousandValidators: 0,
       activeEra: 0,
       loading: true,
+      polling: null,
     }
   },
   computed: {
@@ -48,6 +49,13 @@ export default {
   },
   async created() {
     await this.getChainData()
+    // update every 1 minute
+    this.polling = setInterval(async () => {
+      await this.getChainData()
+    }, 60 * 1000)
+  },
+  beforeDestroy() {
+    clearInterval(this.polling)
   },
   methods: {
     async getChainData() {
