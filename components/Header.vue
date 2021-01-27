@@ -13,6 +13,7 @@
           <b-nav-item to="/kusama">What is Kusama?</b-nav-item>
           <b-nav-item to="/parachains">Kusama Parachains</b-nav-item>
           <b-nav-item to="/crowdloans">Kusama Crowdloans</b-nav-item>
+          <b-nav-item to="/update">Add/Edit</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-container>
