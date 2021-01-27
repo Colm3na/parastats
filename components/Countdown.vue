@@ -1,5 +1,5 @@
 <template>
-  <div class="countdown-widget container" v-if="!loading">
+  <div v-if="!loading" class="countdown-widget container">
     <div class="row text-center">
       <div class="col-md-4 mb-4">
         <div class="box h-100">

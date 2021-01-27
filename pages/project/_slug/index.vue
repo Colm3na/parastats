@@ -4,8 +4,8 @@
       <div class="col-6">
         <nuxt-link
           v-if="getPrev()"
-          :to="getPrev()"
           v-b-tooltip.hover
+          :to="getPrev()"
           title="Navigate to previous project"
         >
           <font-awesome-icon icon="chevron-left" size="2x" />
@@ -14,8 +14,8 @@
       <div class="col-6 text-right">
         <nuxt-link
           v-if="getNext()"
-          :to="getNext()"
           v-b-tooltip.hover
+          :to="getNext()"
           title="Navigate to next project"
         >
           <font-awesome-icon icon="chevron-right" size="2x" />
@@ -75,14 +75,14 @@
         </b-badge>
         <p class="text-light">{{ project.description }}</p>
         <p class="py-2">
-          <span class="mr-2">TAGS:</span> 
+          <span class="mr-2">TAGS:</span>
           <b-badge
             v-for="tag in project.tags"
+            :key="tag"
             pill
             variant="primary"
             class="mr-2 mb-2"
             style="font-size: 1rem"
-            :key="tag"
             >{{ tag }}</b-badge
           >
         </p>
