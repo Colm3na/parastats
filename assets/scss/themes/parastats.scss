@@ -107,6 +107,9 @@ body::-webkit-scrollbar-thumb {
 .footer a {
   color: $body-color;
 }
+.navbar-nav {
+  font-size: 1.2rem;
+}
 
 // header
 .header .title {
@@ -205,4 +208,10 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 2px solid rgba(16, 138, 238, 0.2);
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+}
+
+.countdown-widget .box {
+  border: 2px solid rgba(16, 138, 238, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
 }

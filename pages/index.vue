@@ -1,5 +1,6 @@
 <template>
   <div class="page home-page container-fluid py-3">
+    <Countdown />
     <div class="header text-center">
       <h1 class="title mt-1 mb-5">
         UPCOMING <span class="text-secondary">PROJECTS</span> OPTING FOR A
@@ -133,8 +134,12 @@
 </template>
 
 <script>
+import Countdown from '@/components/Countdown'
 import { config } from '@/config.js'
 export default {
+  components: {
+    Countdown,
+  },
   data() {
     return {
       projects: config.projects,
@@ -143,7 +148,7 @@ export default {
       sortBy: 'name',
       sortDesc: false,
       filter: null,
-      filterOn: ['crypto marketplace'],
+      filterOn: [],
       rows: 0,
       fields: [
         { key: 'name', label: 'NAME' },
