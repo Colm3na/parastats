@@ -277,5 +277,19 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title:
+        'Terms of use | ParaStats | Upcoming projects opting for a parachain in Kusama',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'ParaStats terms of use',
+        },
+      ],
+    }
+  },
+}
 </script>

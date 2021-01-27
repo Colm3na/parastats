@@ -89,5 +89,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title:
+        'Kusama Parachain Crowdloans | ParaStats | Upcoming projects opting for a parachain in Kusama',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Kusama allows parachains to source KSM for their parachain bids in a decentralized crowdloan.',
+        },
+      ],
+    }
+  },
+}
 </script>

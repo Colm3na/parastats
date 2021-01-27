@@ -165,7 +165,7 @@ export default {
   },
   head() {
     return {
-      title: `Project ${this.project.name} | ParaStats`,
+      title: `Project ${this.project.name} | ParaStats | Upcoming projects opting for a parachain in Kusama`,
       meta: [
         {
           hid: 'description',
