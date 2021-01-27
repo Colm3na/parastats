@@ -52,7 +52,27 @@
         >
           <img :src="data.item.logo" class="project-logo-mobile" />
           <h3>{{ data.item.name }}</h3>
+          <b-badge
+            pill
+            variant="secondary"
+            class="category mb-3 mt-1"
+            style="font-size: 1.2rem"
+          >
+            {{ data.item.category }}
+          </b-badge>
           <p class="text-light">{{ data.item.description }}</p>
+          <p class="py-2">
+            <span class="mr-2">TAGS:</span>
+            <b-badge
+              v-for="tag in data.item.tags"
+              :key="tag"
+              pill
+              variant="primary"
+              class="mr-2 mb-2"
+              style="font-size: 1rem"
+              >{{ tag }}</b-badge
+            >
+          </p>
           <h5>
             SISTER OF:
             <span class="text-light">{{ data.item.sisterOf.name }}</span>
@@ -66,9 +86,10 @@
           </h5>
         </div>
       </template>
-      <template #cell(sisterOf)="data">
-        <img :src="data.item.sisterOf.logo" class="sisterof-logo d-inline" />
-        <h4 class="d-inline">{{ data.item.sisterOf.name }}</h4>
+      <template #cell(category)="data">
+        <b-badge pill variant="secondary" style="font-size: 1.2rem">
+          {{ data.item.category }}
+        </b-badge>
       </template>
       <template #cell(token)="data">
         <h4>{{ data.item.token }}</h4>
@@ -153,8 +174,8 @@ export default {
       fields: [
         { key: 'name', label: 'NAME' },
         {
-          key: 'sisterOf',
-          label: 'SISTER OF',
+          key: 'category',
+          label: 'CATEGORY',
           class:
             'text-center d-none d-sm-none d-md-none d-lg-table-cell d-xl-table-cell',
         },
