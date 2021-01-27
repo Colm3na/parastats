@@ -76,31 +76,32 @@
         <h5>{{ data.item.leasePeriod }}</h5>
       </template>
     </b-table>
+    <!-- page size and pagination -->
     <div class="row">
       <div class="col-6">
         <!-- desktop -->
         <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
           <b-button-group>
             <b-button
-              variant="outline-light"
+              :variant="perPage === 10 ? 'outline-primary' : 'outline-light'"
               :class="{ 'selected-per-page': perPage === 10 }"
               @click="setPageSize(10)"
               >10</b-button
             >
             <b-button
-              variant="outline-light"
+              :variant="perPage === 20 ? 'outline-primary' : 'outline-light'"
+              :class="{ 'selected-per-page': perPage === 20 }"
+              @click="setPageSize(10)"
+              >20</b-button
+            >
+            <b-button
+              :variant="perPage === 50 ? 'outline-primary' : 'outline-light'"
               :class="{ 'selected-per-page': perPage === 50 }"
               @click="setPageSize(50)"
               >50</b-button
             >
             <b-button
-              variant="outline-light"
-              :class="{ 'selected-per-page': perPage === 100 }"
-              @click="setPageSize(100)"
-              >100</b-button
-            >
-            <b-button
-              variant="outline-light"
+              :variant="perPage === 1000 ? 'outline-primary' : 'outline-light'"
               :class="{ 'selected-per-page': perPage === 1000 }"
               @click="setPageSize(1000)"
               >All</b-button
@@ -111,8 +112,8 @@
         <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
           <b-dropdown class="m-md-2" text="Page size" variant="outline-light">
             <b-dropdown-item @click="setPageSize(10)">10</b-dropdown-item>
+            <b-dropdown-item @click="setPageSize(10)">20</b-dropdown-item>
             <b-dropdown-item @click="setPageSize(50)">50</b-dropdown-item>
-            <b-dropdown-item @click="setPageSize(100)">100</b-dropdown-item>
             <b-dropdown-item @click="setPageSize(1000)">All</b-dropdown-item>
           </b-dropdown>
         </div>
@@ -137,12 +138,12 @@ export default {
   data() {
     return {
       projects: config.projects,
-      perPage: 10,
+      perPage: 20,
       currentPage: 1,
       sortBy: 'name',
       sortDesc: false,
       filter: null,
-      filterOn: [],
+      filterOn: ['crypto marketplace'],
       rows: 0,
       fields: [
         { key: 'name', label: 'NAME' },

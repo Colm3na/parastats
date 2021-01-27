@@ -8,6 +8,33 @@ export const config = {
   googleAnalytics: 'G-TNJE563YY2',
   projects: [
     {
+      logo: '/img/logo/Subsocial_400x400.png',
+      name: 'Subsocial',
+      slug: 'subsocial',
+      category: 'Social Network',
+      tags: ['crypto marketplace', 'ipfs'],
+      sisterOf: {
+        name: 'Subsocial',
+        logo: '/img/logo/Subsocial_400x400.png',
+        website: 'https://subsocial.network/',
+      },
+      website: 'https://subsocial.network/',
+      twitter: 'https://twitter.com/SubsocialChain',
+      telegram: 'https://t.me/Subsocial',
+      discord: '',
+      medium: 'https://medium.com/@alex_siman',
+      github: 'https://github.com/dappforce/',
+      youtube: 'https://www.youtube.com/channel/UC1xCFynfwMrjEtFdMf8nXgQ',
+      description:
+        "An open platform for decentralized social networks and marketplaces. It's censorship-resistant and has built-in monetization methods. Built with Polkadot and IPFS tech stack",
+      token: 'SMN',
+      leasePeriod: 'TBA',
+      rococoV1: {
+        included: false,
+        link: '',
+      },
+    },
+    {
       logo: '/img/logo/Karura_400x400.jpg',
       name: 'Karura',
       slug: 'karura',

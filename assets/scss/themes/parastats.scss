@@ -57,13 +57,14 @@ $border-radius-lg: 0.2rem !default;
 $border-radius-sm: 0.2rem !default;
 $table-border-width: 0 !default;
 
+$pagination-active-color: $primary !default;
 $pagination-color: $body-color !default;
 $pagination-bg: $dark !default;
 $pagination-border-color: $light !default;
 $pagination-hover-color: $primary !default;
 $pagination-hover-bg: $dark !default;
 $pagination-hover-border-color: $light !default;
-$pagination-active-color: $light !default;
+$pagination-active-color: $primary !default;
 $pagination-active-bg: $dark !default;
 $pagination-active-border-color: $light !default;
 $pagination-disabled-color: $light !default;
