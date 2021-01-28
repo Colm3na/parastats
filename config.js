@@ -8,6 +8,33 @@ export const config = {
   googleAnalytics: 'G-TNJE563YY2',
   projects: [
     {
+      logo: '/img/logo/Sora_400x400.jpg',
+      name: 'SORA',
+      slug: 'sora',
+      category: 'DeFi',
+      tags: [],
+      sisterOf: {
+        name: 'SORA',
+        logo: '/img/logo/Sora_400x400.jpg',
+        website: 'https://www.sora.org/',
+      },
+      website: 'https://www.sora.org/',
+      twitter: 'https://twitter.com/sora_xor',
+      telegram: 'https://t.me/sora_xor',
+      discord: '',
+      medium: '',
+      github: '',
+      youtube: 'https://www.youtube.com/channel/UCrsYZWoAqvkXSFBvTp2c3KA',
+      description:
+        'SORA is both a new economic system that decentralizes the concept of a central bank as well as a network that implements a new way to architect a parachain blockchain that connects to the Polkadot relay chain and ecosystem with in-built tools focused on DeFi.',
+      token: 'PSWAP',
+      leasePeriod: '2 years',
+      rococoV1: {
+        included: false,
+        link: '',
+      },
+    },
+    {
       logo: '/img/logo/Subsocial_400x400.png',
       name: 'Subsocial',
       slug: 'subsocial',

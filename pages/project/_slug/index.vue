@@ -153,6 +153,14 @@ export default {
     BIconArrowLeft,
     Timeline,
   },
+  computed: {
+    projects() {
+      const { projects } = this.config
+      return projects.sort(function (a, b) {
+        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0
+      })
+    }
+  },
   data() {
     return {
       config,
@@ -177,23 +185,19 @@ export default {
   },
   methods: {
     getPrev() {
-      const index = this.config.projects.findIndex(
-        ({ slug }) => slug === this.slug
-      )
+      const index = this.projects.findIndex(({ slug }) => slug === this.slug)
       if (index === 0) {
         return undefined
       }
-      const slug = this.config.projects[index - 1].slug
+      const slug = this.projects[index - 1].slug
       return `/project/${slug}`
     },
     getNext() {
-      const index = this.config.projects.findIndex(
-        ({ slug }) => slug === this.slug
-      )
-      if (index === this.config.projects.length - 1) {
+      const index = this.projects.findIndex(({ slug }) => slug === this.slug)
+      if (index === this.projects.length - 1) {
         return undefined
       }
-      const slug = this.config.projects[index + 1].slug
+      const slug = this.projects[index + 1].slug
       return `/project/${slug}`
     },
   },
