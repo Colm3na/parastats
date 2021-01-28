@@ -8,6 +8,33 @@ export const config = {
   googleAnalytics: 'G-TNJE563YY2',
   projects: [
     {
+      logo: '/img/logo/SubstraTEE_400x400.png',
+      name: 'SubstraTEE',
+      slug: 'SubstraTEE',
+      category: 'Trusted off-Chain Computing',
+      tags: ['privacy', 'scalability', 'interoperability', 'subscription CDNs'],
+      sisterOf: {
+        name: 'SubstraTEE',
+        logo: '/img/logo/SubstraTEE_400x400.png',
+        website: 'https://www.substratee.com/',
+      },
+      website: 'https://www.substratee.com/',
+      twitter: 'https://twitter.com/substra_tee',
+      telegram: '',
+      discord: '',
+      medium: '',
+      github: 'https://github.com/scs/substraTEE',
+      youtube: '',
+      description:
+        'Trusted off-Chain Computing for Substrate Blockchains to provide privacy (private smart contracts and transactions), layer 2 scalability, trusted bridges and oracles and subscription based CDNs',
+      token: 'TEE',
+      leasePeriod: 'TBA',
+      rococoV1: {
+        included: false,
+        link: '',
+      },
+    },
+    {
       logo: '/img/logo/Sora_400x400.jpg',
       name: 'SORA',
       slug: 'sora',
