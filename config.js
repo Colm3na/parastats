@@ -258,9 +258,9 @@ export const config = {
       },
     },
     {
-      logo: '/img/logo/Plasm_400x400.jpg',
-      name: 'Plasm Network',
-      slug: 'plasm-network',
+      logo: '/img/logo/Shiden_400x400.jpg',
+      name: 'Shiden Network',
+      slug: 'shiden-network',
       category: 'Smart Contracts',
       tags: ['layer 2'],
       sisterOf: {
@@ -269,14 +269,15 @@ export const config = {
         website: 'https://www.plasmnet.io/',
       },
       website: 'https://www.plasmnet.io/',
-      twitter: 'https://twitter.com/Plasm_Network',
+      twitter: 'https://twitter.com/ShidenNetwork',
       telegram: 'https://t.me/PlasmOfficial',
       discord: 'https://discordapp.com/invite/Dnfn5eT',
       medium: 'https://medium.com/plasm-network',
       github: 'https://github.com/PlasmNetwork',
       youtube: '',
-      description: 'Plasm Network is a scaling dApps platform on Substrate',
-      token: 'PLM',
+      description:
+        'Shiden Network is a smart contract platform on Kusama Network that supports Ethereum and layer2 technologies like Rollups',
+      token: 'SDN',
       leasePeriod: 'TBA',
       rococoV1: {
         included: true,
