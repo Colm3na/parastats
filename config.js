@@ -22,8 +22,8 @@ export const config = {
       twitter: 'https://twitter.com/sora_xor',
       telegram: 'https://t.me/sora_xor',
       discord: '',
-      medium: '',
-      github: '',
+      medium: 'https://polkaswap.medium.com/',
+      github: 'https://github.com/soramitsu',
       youtube: 'https://www.youtube.com/channel/UCrsYZWoAqvkXSFBvTp2c3KA',
       description:
         'SORA is both a new economic system that decentralizes the concept of a central bank as well as a network that implements a new way to architect a parachain blockchain that connects to the Polkadot relay chain and ecosystem with in-built tools focused on DeFi.',
