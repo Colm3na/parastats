@@ -12,7 +12,7 @@ export const config = {
       name: 'SORA',
       slug: 'sora',
       category: 'DeFi',
-      tags: [],
+      tags: ['DEX'],
       sisterOf: {
         name: 'SORA',
         logo: '/img/logo/Sora_400x400.jpg',
