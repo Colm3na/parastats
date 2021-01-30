@@ -8,6 +8,32 @@ export const config = {
   googleAnalytics: 'G-TNJE563YY2',
   projects: [
     {
+      logo: '/img/logo/HydraDX_400x400.jpg',
+      name: 'HydraDX',
+      slug: 'hydradx',
+      category: 'DEX',
+      tags: ['liquidity pool'],
+      sisterOf: {
+        name: 'HydraDX',
+        logo: '/img/logo/HydraDX_400x400.jpg',
+        website: 'https://hydradx.io/',
+      },
+      website: 'https://hydradx.io/',
+      twitter: 'https://twitter.com/hydra_dx',
+      telegram: 'https://t.me/hydradx',
+      discord: 'https://discord.com/invite/xtVnQgq',
+      medium: '',
+      github: 'https://github.com/galacticcouncil?tab=repositories',
+      youtube: '',
+      description: 'The Multi-headed Liquidity Omnipool',
+      token: 'HDX',
+      leasePeriod: 'TBA',
+      rococoV1: {
+        included: false,
+        link: '',
+      },
+    },
+    {
       logo: '/img/logo/SubstraTEE_400x400.png',
       name: 'SubstraTEE',
       slug: 'SubstraTEE',
