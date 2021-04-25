@@ -153,14 +153,6 @@ export default {
     BIconArrowLeft,
     Timeline,
   },
-  computed: {
-    projects() {
-      const { projects } = this.config
-      return projects.sort(function (a, b) {
-        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0
-      })
-    }
-  },
   data() {
     return {
       config,
@@ -182,6 +174,14 @@ export default {
         },
       ],
     }
+  },
+  computed: {
+    projects() {
+      const { projects } = this.config
+      return projects.sort(function (a, b) {
+        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0
+      })
+    },
   },
   methods: {
     getPrev() {
