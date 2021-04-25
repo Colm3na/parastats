@@ -26,7 +26,7 @@
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/google-fonts": "^1.2.0",
     "@nuxtjs/google-gtag": "^1.0.4",
-    "@polkadot/api": "^3.6.4",
+    "@polkadot/api": "^4.7.1",
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.2",
@@ -38,12 +38,12 @@
     "vue-tweet-embed": "^2.4.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/stylelint-module": "^4.0.0",
@@ -56,13 +56,13 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.4.1",
-    "husky": "^4.3.8",
+    "husky": "^6.0.0",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-standard": "^22.0.0",
     "vue-jest": "^3.0.4"
   }
 }

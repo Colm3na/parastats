@@ -2,11 +2,11 @@
   <div v-if="!loading" class="countdown-widget container">
     <div class="row text-center">
       <div class="col-md-4 mb-4">
-        <div class="box h-100">
+        <!-- <div class="box h-100">
           <h1>{{ daysLeftToReachThousandValidators.toFixed(0) }}</h1>
           <h4>days</h4>
           <p>estimated to reach 1000 validators<br />on kusama chain</p>
-        </div>
+        </div> -->
       </div>
       <div class="col-md-4 mb-4">
         <div class="box h-100">
@@ -16,11 +16,11 @@
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="box h-100">
+        <!-- <div class="box h-100">
           <h1>{{ thousandValitorsEstimatedDate.format('DD') }}</h1>
           <h4>{{ thousandValitorsEstimatedDate.format('MMM') }}</h4>
           <p>estimated to reach 1000 validators<br />on kusama chain</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
